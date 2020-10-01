@@ -1,0 +1,10 @@
+{
+  "name": "kodekafe-covid-tracking-api",
+  "version": "1.0.0",
+  "description": "The API used for tracking visits to Apparat, in order to track COVID spread",
+  "main": "src/app.ts",
+  "repository": "git@github.com:kodekafe/covid-tracking-api.git",
+  "author": "kodekafe (https://kodekafe.no/)",
+  "license": "GPL-3.0-or-later",
+  "private": true
+}
