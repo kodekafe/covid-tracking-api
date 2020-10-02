@@ -1,11 +1,12 @@
-import Express = require("express")
+import Express = require("express");
+
+import { expressConfig } from "./config";
+import loaders from "./loaders/index";
 
 const app = Express();
 
-app.get("/", (req: Express.Request, res: Express.Response): void => {
-  res.send("Aw yeah success");
-});
+loaders(app);
 
-app.listen(8080, () => {
-  console.log("Listening on 8080");
+app.listen(expressConfig.port, expressConfig.host, () => {
+  console.log(`Listening on ${expressConfig.host}:${expressConfig.port}`);
 });
